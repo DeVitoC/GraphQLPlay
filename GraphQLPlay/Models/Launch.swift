@@ -8,12 +8,28 @@
 
 import Foundation
 
+struct LaunchResult: Codable {
+    let data: [String : Launch]
+}
+
+enum LaunchResultKeys: CodingKey {
+    case data
+}
+
 struct Launch: Codable {
-    let id: Int
+    let id: String
     let site: String
     let mission: Mission
     let rocket: Rocket
     let isBooked: Bool
+}
+
+enum LaunchKeys: CodingKey {
+    case id
+    case site
+    case mission
+    case rocket
+    case isBooked
 }
 
 struct Mission: Codable {
@@ -21,13 +37,25 @@ struct Mission: Codable {
     let missionPatch: PatchSize.RawValue
 }
 
+enum MissionKeys: CodingKey {
+    case name
+    case missionPatch
+}
+
 struct Rocket: Codable {
-    let id: Int
+    let id: String
     let name: String
     let type: String
+}
+
+enum RocketKeys: CodingKey {
+    case id
+    case name
+    case type
 }
 
 enum PatchSize: String {
     case large = "LARGE"
     case small = "SMALL"
 }
+
