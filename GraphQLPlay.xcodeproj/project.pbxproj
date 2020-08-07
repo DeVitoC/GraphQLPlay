@@ -13,6 +13,9 @@
 		E2B3BE5424DD626500E33CB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B3BE5224DD626500E33CB3 /* Main.storyboard */; };
 		E2B3BE5624DD626800E33CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B3BE5524DD626800E33CB3 /* Assets.xcassets */; };
 		E2B3BE5924DD626800E33CB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B3BE5724DD626800E33CB3 /* LaunchScreen.storyboard */; };
+		E2B3BE6624DD65FF00E33CB3 /* GQLQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE6524DD65FF00E33CB3 /* GQLQueries.swift */; };
+		E2B3BE6824DD674C00E33CB3 /* GraphQLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE6724DD674C00E33CB3 /* GraphQLController.swift */; };
+		E2B3BE6A24DD698C00E33CB3 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE6924DD698C00E33CB3 /* Launch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E2B3BE5524DD626800E33CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2B3BE5824DD626800E33CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2B3BE5A24DD626800E33CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B3BE6524DD65FF00E33CB3 /* GQLQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GQLQueries.swift; sourceTree = "<group>"; };
+		E2B3BE6724DD674C00E33CB3 /* GraphQLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLController.swift; sourceTree = "<group>"; };
+		E2B3BE6924DD698C00E33CB3 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		E2B3BE4B24DD626500E33CB3 /* GraphQLPlay */ = {
 			isa = PBXGroup;
 			children = (
-				E2B3BE4C24DD626500E33CB3 /* AppDelegate.swift */,
-				E2B3BE4E24DD626500E33CB3 /* SceneDelegate.swift */,
+				E2B3BE6424DD62B100E33CB3 /* Models */,
+				E2B3BE6324DD62AB00E33CB3 /* Views */,
+				E2B3BE6224DD62A200E33CB3 /* View Controllers */,
+				E2B3BE6124DD629700E33CB3 /* Controllers */,
+				E2B3BE6024DD627500E33CB3 /* Resources */,
 				E2B3BE5024DD626500E33CB3 /* ViewController.swift */,
 				E2B3BE5224DD626500E33CB3 /* Main.storyboard */,
-				E2B3BE5524DD626800E33CB3 /* Assets.xcassets */,
 				E2B3BE5724DD626800E33CB3 /* LaunchScreen.storyboard */,
-				E2B3BE5A24DD626800E33CB3 /* Info.plist */,
 			);
 			path = GraphQLPlay;
+			sourceTree = "<group>";
+		};
+		E2B3BE6024DD627500E33CB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3BE4C24DD626500E33CB3 /* AppDelegate.swift */,
+				E2B3BE4E24DD626500E33CB3 /* SceneDelegate.swift */,
+				E2B3BE5524DD626800E33CB3 /* Assets.xcassets */,
+				E2B3BE5A24DD626800E33CB3 /* Info.plist */,
+				E2B3BE6524DD65FF00E33CB3 /* GQLQueries.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E2B3BE6124DD629700E33CB3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3BE6724DD674C00E33CB3 /* GraphQLController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E2B3BE6224DD62A200E33CB3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E2B3BE6324DD62AB00E33CB3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E2B3BE6424DD62B100E33CB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3BE6924DD698C00E33CB3 /* Launch.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B3BE5124DD626500E33CB3 /* ViewController.swift in Sources */,
+				E2B3BE6624DD65FF00E33CB3 /* GQLQueries.swift in Sources */,
+				E2B3BE6824DD674C00E33CB3 /* GraphQLController.swift in Sources */,
 				E2B3BE4D24DD626500E33CB3 /* AppDelegate.swift in Sources */,
+				E2B3BE6A24DD698C00E33CB3 /* Launch.swift in Sources */,
 				E2B3BE4F24DD626500E33CB3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8825K9HH49;
-				INFOPLIST_FILE = GraphQLPlay/Info.plist;
+				INFOPLIST_FILE = GraphQLPlay/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8825K9HH49;
-				INFOPLIST_FILE = GraphQLPlay/Info.plist;
+				INFOPLIST_FILE = GraphQLPlay/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
