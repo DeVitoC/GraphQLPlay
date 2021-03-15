@@ -1,5 +1,5 @@
 //
-//  GraphQLController.swift
+//  QueryGraphQLController.swift
 //  GraphQLPlay
 //
 //  Created by Christopher Devito on 8/7/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum GQLQueries {
+enum GenericGQLQueries {
     static let launchQuery = """
     query {
         launch(id:4) {
@@ -29,10 +29,11 @@ enum GQLQueries {
     """
 }
 
-class GraphQLController {
+class GenericQueryGraphQLController {
     let url = URL(string: "https://apollo-fullstack-tutorial.herokuapp.com/")!
+    let session = URLSession.shared
 
-    func fetchLaunch(session: URLSession = URLSession.shared, completion: @escaping (Result<Launch, Error>) -> Void) {
+    func fetchLaunch<T: Codable>(_ type: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
 
@@ -54,12 +55,11 @@ class GraphQLController {
                 return
             }
             do {
-                let dict = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-                print("Dict: \(dict)")
-                let launch = try JSONDecoder().decode(LaunchResult.self, from: data)
-                let launch1 = Array(launch.data.values)[0]
-//                print(launch1)
-                completion(.success(launch1))
+                let launchDict = try JSONDecoder().decode([String: T].self, from: data)
+                guard let launch = launchDict["data"] else {
+                    throw GraphQLError.noData
+                }
+                completion(.success(launch))
                 return
             } catch let error {
                 NSLog("\(error)")
@@ -67,3 +67,8 @@ class GraphQLController {
         }.resume()
     }
 }
+
+enum GraphQLError: Error {
+    case noData
+}
+

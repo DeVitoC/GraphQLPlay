@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  QueryViewController.swift
 //  GraphQLPlay
 //
 //  Created by Christopher Devito on 8/7/20.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class QueryViewController: UIViewController {
     // MARK: - Properties
-    let graphQL = GraphQLController()
+    let graphQL = QueryGraphQLController()
 
     // MARK: - Outlets
     @IBOutlet weak var launchIDLabel: UILabel!
@@ -41,7 +41,5 @@ class ViewController: UIViewController {
         }
 
     }
-
-
 }
 

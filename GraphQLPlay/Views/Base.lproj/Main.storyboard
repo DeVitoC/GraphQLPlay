@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Query View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GraphQLPlay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="QueryViewController" customModule="GraphQLPlay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,11 +159,21 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmb-OJ-36o">
+                                <rect key="frame" x="191" y="358" width="32" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="ccX-5Z-tf2" kind="show" identifier="mutateSegue" id="Zej-q5-ie0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="B4E-eU-LQG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="GZG-hI-sia"/>
+                            <constraint firstItem="Wmb-OJ-36o" firstAttribute="top" secondItem="B4E-eU-LQG" secondAttribute="bottom" constant="50" id="KHx-gf-lAg"/>
                             <constraint firstItem="B4E-eU-LQG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ntZ-mF-dDs"/>
+                            <constraint firstItem="Wmb-OJ-36o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y0b-x6-U1w"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -181,6 +191,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="95"/>
+        </scene>
+        <!--Mutation View Controller-->
+        <scene sceneID="Lqu-RC-Oze">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="ccX-5Z-tf2" customClass="MutationViewController" customModule="GraphQLPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jpd-Va-dPv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gx6-OT-PJw">
+                                <rect key="frame" x="97" y="438" width="220" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Token: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cra-xa-7gU">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="token" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6O-pG-sbn">
+                                        <rect key="frame" x="120" y="0.0" width="100" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="sgS-ao-IwZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdY-GH-4oV">
+                                <rect key="frame" x="142" y="508.5" width="130" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Mutate With Query"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gx6-OT-PJw" firstAttribute="centerX" secondItem="jpd-Va-dPv" secondAttribute="centerX" id="TtA-MG-dsy"/>
+                            <constraint firstItem="XdY-GH-4oV" firstAttribute="centerX" secondItem="jpd-Va-dPv" secondAttribute="centerX" id="cRE-nt-fve"/>
+                            <constraint firstItem="XdY-GH-4oV" firstAttribute="top" secondItem="gx6-OT-PJw" secondAttribute="bottom" constant="50" id="d95-nD-DhF"/>
+                            <constraint firstItem="gx6-OT-PJw" firstAttribute="centerY" secondItem="jpd-Va-dPv" secondAttribute="centerY" id="iJ9-Z9-Awl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zc0-9c-xNo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IfW-Sx-hXe"/>
+                    <connections>
+                        <outlet property="tokenLabel" destination="Z6O-pG-sbn" id="o3f-6f-tn1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhk-Vq-tno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815" y="91"/>
         </scene>
     </scenes>
 </document>

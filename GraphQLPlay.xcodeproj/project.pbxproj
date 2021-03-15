@@ -9,27 +9,41 @@
 /* Begin PBXBuildFile section */
 		E2B3BE4D24DD626500E33CB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE4C24DD626500E33CB3 /* AppDelegate.swift */; };
 		E2B3BE4F24DD626500E33CB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE4E24DD626500E33CB3 /* SceneDelegate.swift */; };
-		E2B3BE5124DD626500E33CB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE5024DD626500E33CB3 /* ViewController.swift */; };
+		E2B3BE5124DD626500E33CB3 /* QueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE5024DD626500E33CB3 /* QueryViewController.swift */; };
 		E2B3BE5424DD626500E33CB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B3BE5224DD626500E33CB3 /* Main.storyboard */; };
 		E2B3BE5624DD626800E33CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B3BE5524DD626800E33CB3 /* Assets.xcassets */; };
 		E2B3BE5924DD626800E33CB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B3BE5724DD626800E33CB3 /* LaunchScreen.storyboard */; };
-		E2B3BE6824DD674C00E33CB3 /* GraphQLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE6724DD674C00E33CB3 /* GraphQLController.swift */; };
+		E2B3BE6824DD674C00E33CB3 /* QueryGraphQLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE6724DD674C00E33CB3 /* QueryGraphQLController.swift */; };
 		E2B3BE6A24DD698C00E33CB3 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE6924DD698C00E33CB3 /* Launch.swift */; };
 		E2B3BE6C24DDC48400E33CB3 /* GQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE6B24DDC48400E33CB3 /* GQuery.swift */; };
+		E2B3BE7024DE37BF00E33CB3 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE6F24DE37BF00E33CB3 /* Login.swift */; };
+		E2B3BE7224DE386600E33CB3 /* MutationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE7124DE386600E33CB3 /* MutationViewController.swift */; };
+		E2B3BE7424DE3A9C00E33CB3 /* MutateGraphQLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE7324DE3A9C00E33CB3 /* MutateGraphQLController.swift */; };
+		E2B3BE7724DE480900E33CB3 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE7624DE480900E33CB3 /* Trip.swift */; };
+		E2B3BE7924DE4A1A00E33CB3 /* MutationQueryGraphQLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE7824DE4A1A00E33CB3 /* MutationQueryGraphQLViewController.swift */; };
+		E2B3BE7B24DE4A3300E33CB3 /* TripGraphQLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3BE7A24DE4A3300E33CB3 /* TripGraphQLController.swift */; };
+		E2FE8BC524E303B1003A54EB /* GenericQueryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE8BC424E303B1003A54EB /* GenericQueryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2B3BE4924DD626500E33CB3 /* GraphQLPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphQLPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B3BE4C24DD626500E33CB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B3BE4E24DD626500E33CB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E2B3BE5024DD626500E33CB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2B3BE5024DD626500E33CB3 /* QueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryViewController.swift; sourceTree = "<group>"; };
 		E2B3BE5324DD626500E33CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2B3BE5524DD626800E33CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2B3BE5824DD626800E33CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2B3BE5A24DD626800E33CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2B3BE6724DD674C00E33CB3 /* GraphQLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLController.swift; sourceTree = "<group>"; };
+		E2B3BE6724DD674C00E33CB3 /* QueryGraphQLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryGraphQLController.swift; sourceTree = "<group>"; };
 		E2B3BE6924DD698C00E33CB3 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		E2B3BE6B24DDC48400E33CB3 /* GQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GQuery.swift; sourceTree = "<group>"; };
+		E2B3BE6F24DE37BF00E33CB3 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		E2B3BE7124DE386600E33CB3 /* MutationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutationViewController.swift; sourceTree = "<group>"; };
+		E2B3BE7324DE3A9C00E33CB3 /* MutateGraphQLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutateGraphQLController.swift; sourceTree = "<group>"; };
+		E2B3BE7624DE480900E33CB3 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		E2B3BE7824DE4A1A00E33CB3 /* MutationQueryGraphQLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutationQueryGraphQLViewController.swift; sourceTree = "<group>"; };
+		E2B3BE7A24DE4A3300E33CB3 /* TripGraphQLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripGraphQLController.swift; sourceTree = "<group>"; };
+		E2FE8BC424E303B1003A54EB /* GenericQueryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericQueryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +99,10 @@
 		E2B3BE6124DD629700E33CB3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E2B3BE6724DD674C00E33CB3 /* GraphQLController.swift */,
+				E2B3BE6724DD674C00E33CB3 /* QueryGraphQLController.swift */,
+				E2B3BE7324DE3A9C00E33CB3 /* MutateGraphQLController.swift */,
+				E2B3BE7A24DE4A3300E33CB3 /* TripGraphQLController.swift */,
+				E2FE8BC424E303B1003A54EB /* GenericQueryController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -93,7 +110,9 @@
 		E2B3BE6224DD62A200E33CB3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E2B3BE5024DD626500E33CB3 /* ViewController.swift */,
+				E2B3BE5024DD626500E33CB3 /* QueryViewController.swift */,
+				E2B3BE7124DE386600E33CB3 /* MutationViewController.swift */,
+				E2B3BE7824DE4A1A00E33CB3 /* MutationQueryGraphQLViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -112,6 +131,8 @@
 			children = (
 				E2B3BE6924DD698C00E33CB3 /* Launch.swift */,
 				E2B3BE6B24DDC48400E33CB3 /* GQuery.swift */,
+				E2B3BE6F24DE37BF00E33CB3 /* Login.swift */,
+				E2B3BE7624DE480900E33CB3 /* Trip.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,12 +208,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B3BE7724DE480900E33CB3 /* Trip.swift in Sources */,
+				E2FE8BC524E303B1003A54EB /* GenericQueryController.swift in Sources */,
+				E2B3BE7024DE37BF00E33CB3 /* Login.swift in Sources */,
 				E2B3BE6C24DDC48400E33CB3 /* GQuery.swift in Sources */,
-				E2B3BE5124DD626500E33CB3 /* ViewController.swift in Sources */,
-				E2B3BE6824DD674C00E33CB3 /* GraphQLController.swift in Sources */,
+				E2B3BE5124DD626500E33CB3 /* QueryViewController.swift in Sources */,
+				E2B3BE7B24DE4A3300E33CB3 /* TripGraphQLController.swift in Sources */,
+				E2B3BE7924DE4A1A00E33CB3 /* MutationQueryGraphQLViewController.swift in Sources */,
+				E2B3BE6824DD674C00E33CB3 /* QueryGraphQLController.swift in Sources */,
+				E2B3BE7424DE3A9C00E33CB3 /* MutateGraphQLController.swift in Sources */,
 				E2B3BE4D24DD626500E33CB3 /* AppDelegate.swift in Sources */,
 				E2B3BE6A24DD698C00E33CB3 /* Launch.swift in Sources */,
 				E2B3BE4F24DD626500E33CB3 /* SceneDelegate.swift in Sources */,
+				E2B3BE7224DE386600E33CB3 /* MutationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
